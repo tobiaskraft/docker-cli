@@ -1,0 +1,9 @@
+[
+  {
+    "comment": "trigger every 1 minute",
+    "schedule": "@every 1m",
+    "command": "",
+    "image": "exensio/clitest",
+    "dockerargs": "--rm -v <path-host-system>/clitest/application-prod.yml:/home/app/application.yml:rw -v <path-host-system>/clitest/logs:/home/app/logs:rw"
+  }
+]  

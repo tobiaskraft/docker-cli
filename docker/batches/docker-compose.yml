@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  crontab:
+    image: willfarrell/crontab:latest
+    restart: unless-stopped    
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./env:/opt/env:ro
+      - ./crontab/config:/opt/crontab:rw
+      - ./crontab/logs:/var/log/crontab:rw 

@@ -1,0 +1,6 @@
+micronaut:
+  application:
+    name: dockercli
+
+myconfig:
+  value: "test value configured by application.yml"
